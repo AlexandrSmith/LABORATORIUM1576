@@ -1,0 +1,139 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ru.kod_it.lib",
+    "module": "documents",
+    "version": "0.2.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.6",
+      "buildId": "s26l57b7rzcpdlmec3d2bznq24"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "fr.opensagres.xdocreport",
+          "module": "fr.opensagres.xdocreport.template.velocity",
+          "version": {
+            "requires": "2.0.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.30"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "documents-0.2.0.jar",
+          "url": "documents-0.2.0.jar",
+          "size": 17579,
+          "sha512": "c5b4e418ecdedcbfe2ec15a9a992920b6284e63174f55c5a589a981a0832aacee5d2fdaee6857ba753d717ea1861fd6e8422247e8f946b413f3c12c4ded67071",
+          "sha256": "beb5e5761a7859e641b5c9de52005baa01a2454e20342bdbdfb34c8ef1a50b25",
+          "sha1": "65a3415b848d0200258676a8e225b5b9be0a6429",
+          "md5": "a71e20736c7ebba1d07c5db642c1f62b"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-reflect",
+          "version": {
+            "requires": "1.4.30"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "1.7.30"
+          }
+        },
+        {
+          "group": "com.github.librepdf",
+          "module": "openpdf",
+          "version": {
+            "requires": "1.3.20"
+          }
+        },
+        {
+          "group": "fr.opensagres.xdocreport",
+          "module": "fr.opensagres.xdocreport.document.odt",
+          "version": {
+            "requires": "2.0.2"
+          }
+        },
+        {
+          "group": "fr.opensagres.xdocreport",
+          "module": "fr.opensagres.xdocreport.document.docx",
+          "version": {
+            "requires": "2.0.2"
+          }
+        },
+        {
+          "group": "fr.opensagres.xdocreport",
+          "module": "fr.opensagres.xdocreport.template.velocity",
+          "version": {
+            "requires": "2.0.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.30"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "documents-0.2.0.jar",
+          "url": "documents-0.2.0.jar",
+          "size": 17579,
+          "sha512": "c5b4e418ecdedcbfe2ec15a9a992920b6284e63174f55c5a589a981a0832aacee5d2fdaee6857ba753d717ea1861fd6e8422247e8f946b413f3c12c4ded67071",
+          "sha256": "beb5e5761a7859e641b5c9de52005baa01a2454e20342bdbdfb34c8ef1a50b25",
+          "sha1": "65a3415b848d0200258676a8e225b5b9be0a6429",
+          "md5": "a71e20736c7ebba1d07c5db642c1f62b"
+        }
+      ]
+    }
+  ]
+}

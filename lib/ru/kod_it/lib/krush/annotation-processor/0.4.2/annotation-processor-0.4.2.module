@@ -1,0 +1,160 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ru.kod_it.lib.krush",
+    "module": "annotation-processor",
+    "version": "0.4.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.8.3",
+      "buildId": "hzqm34pqmjfn5hkhnfcgb2xp24"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup",
+          "module": "kotlinpoet",
+          "version": {
+            "requires": "1.7.2"
+          }
+        },
+        {
+          "group": "com.squareup",
+          "module": "kotlinpoet-metadata",
+          "version": {
+            "requires": "1.7.2"
+          }
+        },
+        {
+          "group": "com.squareup",
+          "module": "kotlinpoet-metadata-specs",
+          "version": {
+            "requires": "1.7.2"
+          }
+        },
+        {
+          "group": "org.hibernate.javax.persistence",
+          "module": "hibernate-jpa-2.1-api",
+          "version": {
+            "requires": "1.0.0.Final"
+          }
+        },
+        {
+          "group": "ru.kod_it.lib.krush",
+          "module": "runtime",
+          "version": {
+            "requires": "0.4.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.31"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "annotation-processor-0.4.2.jar",
+          "url": "annotation-processor-0.4.2.jar",
+          "size": 202473,
+          "sha512": "9de091c2b8e205947d44452baed188bda34b9bae2668c1d5a23dbf72dfffec83b059f13f2c1ba20a8860cc2747a5bfdd2ce7764550f250d0b70ae0cd9408bdc5",
+          "sha256": "43cf175551cd2f11e6b4abdf089d83d4db1b2a1e21969ade0518035e43585845",
+          "sha1": "33de5983b44c7ce489bdd719c0444848c1b71efe",
+          "md5": "26b11e4eb91bdfcfd683f2364a6e0067"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup",
+          "module": "kotlinpoet",
+          "version": {
+            "requires": "1.7.2"
+          }
+        },
+        {
+          "group": "com.squareup",
+          "module": "kotlinpoet-metadata",
+          "version": {
+            "requires": "1.7.2"
+          }
+        },
+        {
+          "group": "com.squareup",
+          "module": "kotlinpoet-metadata-specs",
+          "version": {
+            "requires": "1.7.2"
+          }
+        },
+        {
+          "group": "org.hibernate.javax.persistence",
+          "module": "hibernate-jpa-2.1-api",
+          "version": {
+            "requires": "1.0.0.Final"
+          }
+        },
+        {
+          "group": "ru.kod_it.lib.krush",
+          "module": "runtime",
+          "version": {
+            "requires": "0.4.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.31"
+          }
+        },
+        {
+          "group": "ch.qos.logback",
+          "module": "logback-classic",
+          "version": {
+            "requires": "1.2.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "annotation-processor-0.4.2.jar",
+          "url": "annotation-processor-0.4.2.jar",
+          "size": 202473,
+          "sha512": "9de091c2b8e205947d44452baed188bda34b9bae2668c1d5a23dbf72dfffec83b059f13f2c1ba20a8860cc2747a5bfdd2ce7764550f250d0b70ae0cd9408bdc5",
+          "sha256": "43cf175551cd2f11e6b4abdf089d83d4db1b2a1e21969ade0518035e43585845",
+          "sha1": "33de5983b44c7ce489bdd719c0444848c1b71efe",
+          "md5": "26b11e4eb91bdfcfd683f2364a6e0067"
+        }
+      ]
+    }
+  ]
+}

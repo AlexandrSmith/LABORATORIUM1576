@@ -1,0 +1,85 @@
+import { ProjectDto, ProjectInfoDto } from 'src/models/Project'
+import { localDateToIso, localFormat } from 'src/utils/isoToLocalDate'
+import { format } from 'date-fns'
+import UserStore from 'src/store/modules/user'
+
+export const emptyProject: ProjectDto = {
+  learner: UserStore.shortUserInfo,
+  name: '',
+  annotation: '',
+  subjectAreas: [],
+  members: [],
+  researchTopic: '',
+  researchObject: '',
+  researchSubject: '',
+  researchPurpose: '',
+  researchHypothesis: '',
+  researchMethods: '',
+  locked: false,
+  relevance: '',
+  explanatory: '',
+  problems: '',
+  product: '',
+  tasks: [],
+  workResult: '',
+  conclusion: '',
+  resultFiles: [],
+  mark: 4,
+  stage: 0,
+  waitingForStageUp: false,
+  createDate: localDateToIso(format(new Date(), localFormat)) || '',
+}
+
+export const testProject: ProjectDto = {
+  id: 1,
+  learner: UserStore.shortUserInfo,
+  name: '',
+  annotation: '',
+  subjectAreas: [],
+  members: [],
+  researchTopic: '',
+  researchObject: '',
+  researchSubject: '',
+  researchPurpose: '',
+  researchHypothesis: '',
+  researchMethods: '',
+  locked: false,
+  permissionToPublish: false,
+  shared: false,
+  relevance: '',
+  explanatory: '',
+  problems: '',
+  product: '',
+  tasks: [],
+  workResult: '',
+  conclusion: '',
+  resultFiles: [],
+  mark: 5,
+  stage: 1,
+  waitingForStageUp: false,
+  createDate: '23.01.1999',
+}
+
+export const testComments = [
+  {
+    author: 'Учитель У.У.',
+    authorId: 1,
+    isSelfComment: false,
+    dateTime: '2021-01-01 17:12',
+    text: 'Все ужасно, надо переделать',
+  },
+  {
+    author: 'Иванов И.И.',
+    authorId: 2,
+    isSelfComment: true,
+    dateTime: '2021-01-01 17:14',
+    text: 'А что нужно переделать?',
+  },
+  {
+    author: 'Учитель У.У.',
+    authorId: 1,
+    isSelfComment: false,
+    dateTime: '2021-03-02 13:47',
+    text: 'Вы переделали?',
+  },
+]

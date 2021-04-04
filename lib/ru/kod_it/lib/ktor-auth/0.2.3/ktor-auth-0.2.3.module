@@ -1,0 +1,220 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ru.kod_it.lib",
+    "module": "ktor-auth",
+    "version": "0.2.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.6",
+      "buildId": "cy2mmj6sjzakrk6suqyuvfdtde"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.ktor",
+          "module": "ktor-server-core",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-server-sessions",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-auth",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-jackson",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-apache",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "at.favre.lib",
+          "module": "bcrypt",
+          "version": {
+            "requires": "0.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.30"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ktor-auth-0.2.3.jar",
+          "url": "ktor-auth-0.2.3.jar",
+          "size": 241978,
+          "sha512": "8a58b2c307d230c99cc33dd9d3469d9cf4271c18f8722957687b07c0a98d98802d0ba881fb3b1828cfd3e02a87f730c93baa5a87b60deb007b73282a5c43a28d",
+          "sha256": "65fe3200c9fc1e6f19ff1f2db0b70455c21c6954f66b44df9a55a33e14aa419a",
+          "sha1": "7ad957f2ccf51621503381a4133ab7bfef2840ad",
+          "md5": "e22f7f0cea32e1a958cd58cc70424689"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "1.4.30"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.0.1"
+          }
+        },
+        {
+          "group": "io.arrow-kt",
+          "module": "arrow-core",
+          "version": {
+            "requires": "0.10.5"
+          }
+        },
+        {
+          "group": "io.arrow-kt",
+          "module": "arrow-syntax",
+          "version": {
+            "requires": "0.10.5"
+          }
+        },
+        {
+          "group": "org.jetbrains.exposed",
+          "module": "exposed-core",
+          "version": {
+            "requires": "0.29.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.exposed",
+          "module": "exposed-java-time",
+          "version": {
+            "requires": "0.29.1"
+          }
+        },
+        {
+          "group": "ru.kod_it.lib",
+          "module": "jsonapi",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-server-core",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-server-sessions",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-auth",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-jackson",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-apache",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "at.favre.lib",
+          "module": "bcrypt",
+          "version": {
+            "requires": "0.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.30"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ktor-auth-0.2.3.jar",
+          "url": "ktor-auth-0.2.3.jar",
+          "size": 241978,
+          "sha512": "8a58b2c307d230c99cc33dd9d3469d9cf4271c18f8722957687b07c0a98d98802d0ba881fb3b1828cfd3e02a87f730c93baa5a87b60deb007b73282a5c43a28d",
+          "sha256": "65fe3200c9fc1e6f19ff1f2db0b70455c21c6954f66b44df9a55a33e14aa419a",
+          "sha1": "7ad957f2ccf51621503381a4133ab7bfef2840ad",
+          "md5": "e22f7f0cea32e1a958cd58cc70424689"
+        }
+      ]
+    }
+  ]
+}

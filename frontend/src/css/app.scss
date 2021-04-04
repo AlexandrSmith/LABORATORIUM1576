@@ -1,0 +1,157 @@
+// app global css in SCSS form
+
+:root {
+  --header-height: 150px;
+}
+
+@media (max-width: $header-breakpoint) {
+  :root {
+    --header-height: 200px;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  :root {
+    --header-height: 60px;
+  }
+}
+
+body {
+  @extend .tupperware-text;
+  font-family: 'Open Sans', 'Roboto', '-apple-system', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+h5 {
+  margin: 10px;
+}
+
+.bg-header, .bg-side-menu {
+  background: $secondary;
+  > aside {
+    background: $background;
+  }
+}
+
+.page {
+  padding: 20px 20px 0 20px;
+}
+
+.tupperware-text {
+  color: $app-grey-1;
+
+  &--active {
+    color: $app-black;
+  }
+}
+
+.text-plus-icon {
+  color: #bdbdbd;
+  background: $app-grey-1;
+}
+
+.bg-plus-icon {
+  background: $app-grey-1;
+}
+
+.subpage {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--header-height) - 210px);
+  padding: 0 16px;
+  margin: 40px auto 0;
+  max-width: 1400px;
+}
+
+.subject-block {
+  font-size: 16px;
+  padding-left: 10px;
+
+  &:hover {
+    box-shadow: 2px 5px 7px 3px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease-in-out;
+    /*background-color: #F2F2F2;*/
+  }
+}
+
+.task {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 10px;  
+
+  &__task-title {
+    color: #828282;
+    margin: 0;
+  }
+
+  &__task-result {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  &__result-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+}
+
+.step-block {
+  > div {
+    margin-bottom: 10px;
+  }
+}
+
+.bordered-btn {
+  margin-right: 10px;
+  border: 1px solid $primary;
+}
+
+.icon-default {
+  color: $icon-default;
+}
+
+.no-decorations {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sticky-position {
+  position: sticky;
+  top: calc(var(--header-height) + var(--sticky-offset, 4px));
+}
+
+.page-title {
+  color: $app-grey-2;
+  padding: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-title {
+  color: $app-grey-2;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.text-rating {
+  color: rgb(255, 222, 22);
+}
+
+.text-rating-no-select {
+  color: #ccc;
+}
+
+.max-content {
+  width: max-content;
+}
+
+.height-min-content {
+  height: min-content;
+}

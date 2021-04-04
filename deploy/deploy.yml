@@ -1,0 +1,71 @@
+version: '3.7'
+
+services:
+  frontend:
+    image: ${FRONTEND_IMAGE:?image not defined}:${IMAGE_TAG:?tag not defined}
+    networks:
+      - default
+      - webproxy
+    environment:
+      TZ: Europe/Moscow
+      VIRTUAL_HOST: ${PROJECT_URL:?url not defined}
+      LETSENCRYPT_HOST: ${PROJECT_URL:?url not defined}
+    depends_on:
+      - backend
+    stop_signal: SIGQUIT
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 64M
+
+  backend:
+    image: ${BACKEND_IMAGE:?image not defined}:${IMAGE_TAG:?tag not defined}
+    networks:
+      - default
+    environment:
+      TZ: Europe/Moscow
+      USE_LIBRE_OFFICE: 'true'
+#      SMTP_HOSTNAME: smtp.yandex.ru
+#      SMTP_USERNAME: test@kod-it.ru
+#      SMTP_FROM: test@kod-it.ru
+#      SMTP_PASSWORD_FILE: /run/secrets/email_password
+
+      APP_URL: https://${PROJECT_URL:?url not defined}
+      POSTGRES_HOST: projects.kod-it.ru
+      POSTGRES_PORT: 53451
+      POSTGRES_DB: ${PROJECT_NAME}_${INSTANCE}
+      POSTGRES_USER: app_${PROJECT_NAME}
+      SECRET_KEY_FILE: /run/secrets/session_key
+      POSTGRES_PASSWORD_FILE: /run/secrets/db_password
+    secrets:
+      - db_password
+      - session_key
+    volumes:
+      - storage:/srv/storage
+      - sessions:/srv/sessions
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+
+volumes:
+  storage:
+  sessions:
+
+networks:
+  webproxy:
+    external: true
+
+secrets:
+#  email_password:
+#    external: true
+  db_password:
+    name: ${PROJECT_NAME}_db_password
+    external: true
+  session_key:
+    name: ${PROJECT_NAME}_${INSTANCE}_session_key
+    external: true

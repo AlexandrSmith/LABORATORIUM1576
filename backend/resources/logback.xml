@@ -1,0 +1,20 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{YYYY-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="trace">
+        <appender-ref ref="STDOUT"/>
+    </root>
+    <logger name="com.papsign" level="WARN"/>
+    <logger name="com.jayway.jsonpath" level="WARN"/>
+    <logger name="org.docx4j" level="WARN"/>
+    <logger name="org.apache.fop" level="WARN"/>
+    <logger name="org.apache.xmlgraphics" level="WARN"/>
+    <logger name="org.eclipse.jetty" level="INFO"/>
+    <logger name="io.netty" level="INFO"/>
+    <logger name="com.zaxxer.hikari" level="WARN"/>
+    <logger name="com.haulmont.yarg" level="WARN"/>
+    <logger name="ru.kod_it.lib.documents" level="WARN"/>
+</configuration>

@@ -1,0 +1,209 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ru.kod_it.lib.krush",
+    "module": "runtime",
+    "version": "0.4.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.8.3",
+      "buildId": "hzqm34pqmjfn5hkhnfcgb2xp24"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-reflect",
+          "version": {
+            "requires": "1.4.31"
+          }
+        },
+        {
+          "group": "org.jetbrains.exposed",
+          "module": "exposed-core",
+          "version": {
+            "requires": "0.30.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.exposed",
+          "module": "exposed-dao",
+          "version": {
+            "requires": "0.30.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.exposed",
+          "module": "exposed-jdbc",
+          "version": {
+            "requires": "0.30.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.exposed",
+          "module": "exposed-java-time",
+          "version": {
+            "requires": "0.30.1"
+          }
+        },
+        {
+          "group": "org.postgresql",
+          "module": "postgresql",
+          "version": {
+            "requires": "42.2.18"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.31"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime-0.4.2.jar",
+          "url": "runtime-0.4.2.jar",
+          "size": 54153,
+          "sha512": "805b1406a1a578ca4ea190af5239c366484bf8cc4b05f397b1f65f6563fdedb870783d4a94200de9144dcac8c5694b03008c9ee1ab94c0c85dc0ec029f6beca5",
+          "sha256": "a60c85758cc77f2e4b2de100de5fd3a5760db70ce1b41ca6d032a8506fb7fa65",
+          "sha1": "060392b910b69d2ad35277351039f8b43784f932",
+          "md5": "f07613850673a734d45e73a6110aa04b"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-core",
+          "version": {
+            "requires": "2.12.1"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-databind",
+          "version": {
+            "requires": "2.12.1"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.module",
+          "module": "jackson-module-kotlin",
+          "version": {
+            "requires": "2.12.1"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.datatype",
+          "module": "jackson-datatype-jsr310",
+          "version": {
+            "requires": "2.12.1"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.datatype",
+          "module": "jackson-datatype-jdk8",
+          "version": {
+            "requires": "2.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-reflect",
+          "version": {
+            "requires": "1.4.31"
+          }
+        },
+        {
+          "group": "org.jetbrains.exposed",
+          "module": "exposed-core",
+          "version": {
+            "requires": "0.30.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.exposed",
+          "module": "exposed-dao",
+          "version": {
+            "requires": "0.30.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.exposed",
+          "module": "exposed-jdbc",
+          "version": {
+            "requires": "0.30.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.exposed",
+          "module": "exposed-java-time",
+          "version": {
+            "requires": "0.30.1"
+          }
+        },
+        {
+          "group": "org.postgresql",
+          "module": "postgresql",
+          "version": {
+            "requires": "42.2.18"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.31"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime-0.4.2.jar",
+          "url": "runtime-0.4.2.jar",
+          "size": 54153,
+          "sha512": "805b1406a1a578ca4ea190af5239c366484bf8cc4b05f397b1f65f6563fdedb870783d4a94200de9144dcac8c5694b03008c9ee1ab94c0c85dc0ec029f6beca5",
+          "sha256": "a60c85758cc77f2e4b2de100de5fd3a5760db70ce1b41ca6d032a8506fb7fa65",
+          "sha1": "060392b910b69d2ad35277351039f8b43784f932",
+          "md5": "f07613850673a734d45e73a6110aa04b"
+        }
+      ]
+    }
+  ]
+}

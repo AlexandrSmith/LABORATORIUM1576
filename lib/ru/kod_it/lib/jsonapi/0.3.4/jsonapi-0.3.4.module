@@ -1,0 +1,141 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ru.kod_it.lib",
+    "module": "jsonapi",
+    "version": "0.3.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.6",
+      "buildId": "s25gwid6ybc7xekciuhrmkzqje"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.github.papsign",
+          "module": "Ktor-OpenAPI-Generator",
+          "version": {
+            "requires": "0.2-beta.16"
+          },
+          "excludes": [
+            {
+              "group": "org.webjars",
+              "module": "swagger-ui"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.31"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "jsonapi-0.3.4.jar",
+          "url": "jsonapi-0.3.4.jar",
+          "size": 270346,
+          "sha512": "91e161117e116b40fea9a2647452127bf20d667d58a112a00a96d2525749d1552a796a56d24bef9f3ef86546743818537d9255a063901501069fd7172d0c385e",
+          "sha256": "45f3d267cda7e8f5a9aa05fa73a190bf1cc32eb6465fe753dedb5a9c50386073",
+          "sha1": "c6d3276b2a7d40be8d127f9894c4c183b327fc30",
+          "md5": "440adbd4b15d9d30165e497f30ab9c99"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "1.4.31"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-server-core",
+          "version": {
+            "requires": "1.5.2"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-jackson",
+          "version": {
+            "requires": "1.5.2"
+          }
+        },
+        {
+          "group": "ru.kod_it.lib",
+          "module": "jackson",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "com.github.papsign",
+          "module": "Ktor-OpenAPI-Generator",
+          "version": {
+            "requires": "0.2-beta.16"
+          },
+          "excludes": [
+            {
+              "group": "org.webjars",
+              "module": "swagger-ui"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.31"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "jsonapi-0.3.4.jar",
+          "url": "jsonapi-0.3.4.jar",
+          "size": 270346,
+          "sha512": "91e161117e116b40fea9a2647452127bf20d667d58a112a00a96d2525749d1552a796a56d24bef9f3ef86546743818537d9255a063901501069fd7172d0c385e",
+          "sha256": "45f3d267cda7e8f5a9aa05fa73a190bf1cc32eb6465fe753dedb5a9c50386073",
+          "sha1": "c6d3276b2a7d40be8d127f9894c4c183b327fc30",
+          "md5": "440adbd4b15d9d30165e497f30ab9c99"
+        }
+      ]
+    }
+  ]
+}

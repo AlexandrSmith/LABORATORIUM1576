@@ -1,0 +1,143 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ru.kod_it.lib",
+    "module": "jackson",
+    "version": "0.2.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.6",
+      "buildId": "n4kyooonubetdlmh6iyxju37b4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.ktor",
+          "module": "ktor-jackson",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.datatype",
+          "module": "jackson-datatype-jsr310",
+          "version": {
+            "requires": "2.12.1"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.datatype",
+          "module": "jackson-datatype-jdk8",
+          "version": {
+            "requires": "2.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.30"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "jackson-0.2.0.jar",
+          "url": "jackson-0.2.0.jar",
+          "size": 25703,
+          "sha512": "953c0e1fd5783d53813bf9fef56f0057be51a8cd33a7ed52cdfb8d6d7334e14b730fee8b0253d9594b1b37a266eedc3b524a7b3a5256da29504e0298bab9bb59",
+          "sha256": "2c4cc86078b637910b43ce6362c8781d40c67bfc09a7c39baa30d99e7d807ba0",
+          "sha1": "bd175a51edb1c1ea7475daa329a1bf67d0e45b60",
+          "md5": "466d9fea8ad2c21de3602a40134aaee7"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "1.4.30"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-server-core",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-jackson",
+          "version": {
+            "requires": "1.5.1"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.datatype",
+          "module": "jackson-datatype-jsr310",
+          "version": {
+            "requires": "2.12.1"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.datatype",
+          "module": "jackson-datatype-jdk8",
+          "version": {
+            "requires": "2.12.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.30"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "jackson-0.2.0.jar",
+          "url": "jackson-0.2.0.jar",
+          "size": 25703,
+          "sha512": "953c0e1fd5783d53813bf9fef56f0057be51a8cd33a7ed52cdfb8d6d7334e14b730fee8b0253d9594b1b37a266eedc3b524a7b3a5256da29504e0298bab9bb59",
+          "sha256": "2c4cc86078b637910b43ce6362c8781d40c67bfc09a7c39baa30d99e7d807ba0",
+          "sha1": "bd175a51edb1c1ea7475daa329a1bf67d0e45b60",
+          "md5": "466d9fea8ad2c21de3602a40134aaee7"
+        }
+      ]
+    }
+  ]
+}

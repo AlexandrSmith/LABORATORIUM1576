@@ -1,0 +1,10 @@
+{
+  "printWidth": 120,
+  "quoteProps": "preserve",
+  "singleQuote": true,
+  "semi": false,
+  "bracketSpacing": true,
+  "trailingComma": "es5",
+  "vueIndentScriptAndStyle": false,
+  "endOfLine": "lf"
+}

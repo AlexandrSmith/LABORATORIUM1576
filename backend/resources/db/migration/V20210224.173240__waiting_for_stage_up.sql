@@ -1,0 +1,1 @@
+alter table projects add column waiting_for_stage_up boolean not null default false;
